@@ -1,48 +1,122 @@
-nav {
-    background-color: lightgray;
-    align-items: center;
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
 }
-.nav-center {
-    padding-left: 2rem;
-    padding-right: 2rem;
+
+/* Navigation Styles */
+nav {
+    background: lightgray;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px 60px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
 }
-.nav-links {
-    display: flex;
+
+.nav-center {
+    max-width: 1200px;
+    margin: 0 auto;
 }
-nav a {
+
+h2 {
     color: black;
+    text-transform: uppercase;
+    font-size: 36px;
+    margin: 2;
+    letter-spacing: 2px;
 }
-nav a:hover {
-    text-decoration-line: underline;
+
+.navlinks {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-.selected {
+
+.navlinks li {
+    font-size: 18px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0 15px;
+    position: relative;
+    margin-left: 20px;
+    transition: 0.5s;
+}
+
+.navlinks li:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.navlinks li:hover:before {
+    transform: scaleX(1);
+}
+
+.navlinks .selected {
+    color: #000;
     font-weight: bold;
 }
-ul {
-    list-style-type: none;
-}
+
 a {
+    color:#000;
     text-decoration: none;
 }
+
+/* Other Styles */
 main {
     place-items: center;
 }
+
 .container {
     text-align: center;
 }
+
+h3 {
+    color: black;
+    font-size: 24px;
+    margin: 2;
+    letter-spacing: 2px;
+}
+
 .items {
     display: grid;
     grid-template-columns: auto auto auto;
     padding-top: 2rem;
 }
+
 .image-watch {
     width: 50%;
     height: auto;
 }
+
 .image-pen {
     width: 20%;
     height: auto;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #f1c40f;
 }

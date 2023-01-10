@@ -113,7 +113,7 @@ function displayItems(watchesitems){
     let display = watchesitems.map(function(watch){
         return `<article class="item">
                     <div class="info">
-                        <h3>${watch.title}</h3>
+                        <h4>${watch.title}</h4>
                     </div>
                     <img src="${watch.img}" class="image-watch" alt="${watch.title}">
                 </article>`;

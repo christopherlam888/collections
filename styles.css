@@ -1,0 +1,48 @@
+nav {
+    background-color: lightgray;
+    align-items: center;
+}
+.nav-center {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-links {
+    display: flex;
+}
+nav a {
+    color: black;
+}
+nav a:hover {
+    text-decoration-line: underline;
+}
+.selected {
+    font-weight: bold;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+main {
+    place-items: center;
+}
+.container {
+    text-align: center;
+}
+.items {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 2rem;
+}
+.image-watch {
+    width: 50%;
+    height: auto;
+}
+.image-pen {
+    width: 20%;
+    height: auto;
+}
